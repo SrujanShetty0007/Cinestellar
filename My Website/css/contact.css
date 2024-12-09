@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --primary-color: #a855f7;
+    --primary-color-dark: #9333ea;
+    --orange-color: #ca8a04;
+    --extra-light: #faf5ff;
+    --primary-green-color: #4EA685;
+    --secondary-green-color: #57B894;
+    --gray: #efefef;
+    --gray-2: #757575;
+    /* SOCIALS COLORS */
+    --facebook-color: #4267B2;
+    --google-color: #DB4437;
+    --twitter-color: #1DA1F2;
+    --insta-color: #E1306C;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    /* background-color: #372a3b; */
+    background: url("../background-images/img3.png") fixed;
+    background-position: center;
+    background-size: auto;
+    width: 100%;
+}
+
+
+
+/* HEADER START*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-image: linear-gradient(to bottom, rgb(23, 23, 23), rgba(105, 105, 105, 0.55));
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.776);
+    box-shadow: 0 2px 5px rgb(0, 0, 0);
+    z-index: 10;
+    height: 70px;
+}
+
+
+
+/* LOGO */
+.logo {
+    padding-top: 10px;
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    text-decoration: none;
+    cursor: default;
+    font-weight: 900;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* LOGO ICON */
+.logo-reel {
+    margin-right: 7px;
+    margin-left: 20px;
+    margin-top: 1px;
+    display: flex;
+    width: 40px;
+    height: 40px;
+}
+
+
+
+/* NAVIGATION BAR */
+.navbar {
+    padding-top: 8px;
+    width: 100%;
+    display: flex;
+    margin-left: 55%;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Lalezar", system-ui;
+    margin-left: 35px;
+    transition: ease-out .3s;
+}
+
+.navbar a:hover {
+    color: var(--secondary-green-color);
+}
+
+
+
+/* LOGIN BUTTON */
+.navbar .loginbtn {
+    display: flex;
+    margin-top: -4px;
+    border: 1.5px solid white;
+    padding-top: 6px;
+    padding-bottom: 10px;
+    padding-right: 16px;
+    padding-left: 16px;
+    background: var(--primary-color-dark);
+    border-radius: 5px;
+    transition: ease-in-out .3s;
+    color: #fff;
+}
+
+.navbar .loginbtn:hover {
+    background: white;
+    color: var(--primary-color);
+    border: 1.5px solid var(--primary-color-dark);
+}
+
+
+/* SOCIAL LINKS */
+
+
+
+/* Footer Styles */
+.footer {
+    margin-top: 20%;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer h2 {
+    font-family: 'poppins';
+    color: var(--primary-color);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: var(--icon-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links #github:hover {
+    color: #333;
+    transform: translateY(-8px);
+}
+
+.social-links #twitter:hover {
+    color: var(--twitter-color);
+    transform: translateY(-8px);
+}
+
+.social-links #facebook:hover {
+    color: var(--facebook-color);
+    transform: translateY(-8px);
+}
+
+.social-links #instagram:hover {
+    color: var(--insta-color);
+    transform: translateY(-8px);
+}
+
+.social-links #email:hover {
+    color: var(--google-color);
+    transform: translateY(-8px);
+}
+
+.social-links a i {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.social-links span {
+    font-family: 'poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .social-links {
+        gap: 30px;
+    }
+
+    .social-links a i {
+        font-size: 32px;
+    }
+
+    .social-links span {
+        font-size: 12px;
+    }
+}
