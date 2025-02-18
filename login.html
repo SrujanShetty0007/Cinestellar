@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinestellar - Login</title>
+    <link rel="icon" type="image/png" href="./web icons/film-reel.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/navigations.css">   
+    <link rel="website icon" type="png" href="/web icons/film-reel.png">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="/web icons/film-reel.png" alt="Cinestellar Logo">
+                <span>Cinestellar</span>
+            </a>
+    
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+    
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="movies.html">Movies</a>
+                <a href="tvshows.html">TV Shows</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <button class="login-btn"><a href="login.html">Login</a></button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <form action="">
+            <h1>Welcome Back</h1>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" class="details" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" class="details" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            
+            <div class="divider">
+                <span>or continue with</span>
+            </div>
+            
+            <div class="social-login">
+                <button type="button" class="social-btn google-btn">
+                    <i class="fab fa-google"></i>
+                    <span>Google</span>
+                </button>
+                <button type="button" class="social-btn facebook-btn">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                </button>
+            </div>
+            
+            <a href="index.html" class="return-home">Return to Home</a>
+        </form>
+    </div>
+
+<!-- Footer -->
+<footer class=" footer ">
+    <div class=" footer-content ">
+        <div class=" footer-section ">
+            <h3>Quick Links</h3>
+            <ul class=" footer-links ">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="tvshows.html">TV Shows</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class=" footer-section ">
+            <h3>Connect With Us</h3>
+            <div class=" social-links ">
+                <a href=" https://github.com/SrujanShetty0007" class=" social-icon "><i class=" fab fa-github "></i></a>
+                <a href="https://www.linkedin.com/in/srujan-shetty0007/" class=" social-icon "><i
+                        class=" fab fa-linkedin "></i></a>
+                <a href=" # " class=" social-icon "><i class=" fab fa-facebook "></i></a>
+                <a href="https://www.instagram.com/srujan_shetty_0007/" class=" social-icon "><i
+                        class=" fab fa-instagram "></i></a>
+                <a href="mailto:srujanshetty0007@gmail.com" class=" social-icon "><i class=" fas fa-envelope "></i></a>
+            </div>
+        </div>
+
+        <div class=" footer-section ">
+            <h3>Newsletter</h3>
+            <p>Subscribe to get the latest updates</p>
+            <form class=" newsletter-form ">
+                <input type=" email " placeholder=" Enter your email ">
+                <button type=" submit ">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</footer>
+<marquee behavior="scroll" direction="left">
+    <a href="login.html" style="color: antiquewhite;">Login</a> to get notified and get information about the latest
+    movies and TV shows!
+</marquee>
+
+<script src="script.js"></script>
+</body>
+
+</html>   

@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+:root {
+    --primary: #8B5CF6;
+    --primary-dark: #7C3AED;
+    --secondary: #EC4899;
+    --background: #0F172A;
+    --text: #F8FAFC;
+    --text-muted: #94A3B8;
+    --card-bg: rgba(30, 41, 59, 0.5);
+    --header-bg: rgba(15, 23, 42, 0.8);
+    /* Social Media Colors */
+    --github-color: #ffffff;
+    --twitter-color: #1DA1F2;
+    --facebook-color: #4267B2;
+    --instagram-color: #E1306C;
+    --email-color: #EA4335;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main Content */
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 1rem 4rem;
+    text-align: center;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.contact-heading {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    animation: slideDown 0.8s ease-out;
+}
+
+.contact-description {
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    animation: slideUp 0.8s ease-out;
+    animation-delay: 0.2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+
+/* Social Links Section */
+
+.social-links-container {
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 3rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    animation: scaleIn 0.8s ease-out;
+    animation-delay: 0.4s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-links-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.social-links-container:hover::before {
+    left: 100%;
+}
+
+.social-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+}
+
+.social-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-muted);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 1.5rem;
+    border-radius: 12px;
+    width: 160px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.social-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1));
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.social-link:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.social-link:hover::before {
+    opacity: 1;
+}
+
+.social-link i {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-origin: center;
+}
+
+.social-link span {
+    font-size: 1rem;
+    font-weight: 500;
+    position: relative;
+}
+
+.social-link span::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: currentColor;
+    transition: width 0.3s ease;
+}
+
+.social-link:hover span::after {
+    width: 100%;
+}
+
+/* Social Link Hover Effects */
+
+.social-link#github:hover {
+    color: var(--github-color);
+    border-color: var(--github-color);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.social-link#twitter:hover {
+    color: var(--twitter-color);
+    border-color: var(--twitter-color);
+    box-shadow: 0 5px 15px rgba(29, 161, 242, 0.2);
+}
+
+.social-link#facebook:hover {
+    color: var(--facebook-color);
+    border-color: var(--facebook-color);
+    box-shadow: 0 5px 15px rgba(66, 103, 178, 0.2);
+}
+
+.social-link#instagram:hover {
+    color: var(--instagram-color);
+    border-color: var(--instagram-color);
+    box-shadow: 0 5px 15px rgba(225, 48, 108, 0.2);
+}
+
+.social-link#email:hover {
+    color: var(--email-color);
+    border-color: var(--email-color);
+    box-shadow: 0 5px 15px rgba(234, 67, 53, 0.2);
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: 6rem 1rem 3rem;
+    }
+
+    .contact-heading {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .contact-description {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+        padding: 0 1rem;
+    }
+
+    .social-links-container {
+        padding: 2rem 1rem;
+        margin: 0 1rem;
+        width: calc(100% - 2rem);
+    }
+
+    .social-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .social-link {
+        width: 100%;
+        max-width: 200px;
+        padding: 1.25rem;
+    }
+
+    .social-link i {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content {
+        padding: 5rem 0.5rem 2rem;
+    }
+
+    .contact-heading {
+        font-size: 1.75rem;
+        padding: 0 0.5rem;
+    }
+
+    .contact-description {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .social-links-container {
+        padding: 1.5rem 1rem;
+        border-radius: 12px;
+    }
+
+    .social-links {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .social-link {
+        width: 100%;
+        max-width: 250px;
+        padding: 1rem;
+        margin: 0 auto;
+    }
+
+    .social-link i {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .social-link span {
+        font-size: 0.9rem;
+    }
+
+    .social-link:hover {
+        transform: translateY(-3px) scale(1.02);
+    }
+}
+
+@media (max-width: 360px) {
+    .contact-heading {
+        font-size: 1.5rem;
+    }
+
+    .contact-description {
+        font-size: 0.9rem;
+    }
+
+    .social-links-container {
+        padding: 1rem;
+    }
+
+    .social-link {
+        padding: 0.8rem;
+    }
+
+    .social-link i {
+        font-size: 1.8rem;
+    }
+
+    .social-link span {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-height: 600px) and (orientation: landscape) {
+    .main-content {
+        padding: 5rem 1rem 2rem;
+    }
+
+    .social-links {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .social-link {
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .main-content {
+        padding: 10rem 1rem 5rem;
+    }
+
+    .contact-heading {
+        font-size: 3rem;
+    }
+
+    .contact-description {
+        font-size: 1.2rem;
+        max-width: 800px;
+    }
+
+    .social-links-container {
+        max-width: 1000px;
+    }
+
+    .social-link {
+        width: 180px;
+    }
+
+    .social-link i {
+        font-size: 2.8rem;
+    }
+
+    .social-link span {
+        font-size: 1.1rem;
+    }
+}
+
+/* Add new keyframe animations */
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

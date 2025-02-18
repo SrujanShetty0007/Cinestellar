@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinestellar - Movie Information Hub</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/navigations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="website icon" type="png" href="/web icons/film-reel.png">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="/web icons/film-reel.png" alt="Cinestellar Logo">
+                <span>Cinestellar</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="movies.html">Movies</a>
+                <a href="tvshows.html">TV Shows</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <button class="login-btn"><a href="login.html">Login</a></button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Add this after header and before movies-container -->
+    <div class="search-hero">
+        <h1>Discover Amazing Movies</h1>
+        <p>Find your next favorite film from our curated collection</p>
+        <div class="search-section">
+            <div class="search-container">
+                <input type="text" placeholder="Search for movies...">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="movies-container">
+        <!-- Interstellar Card -->
+        <article class="movie-card">
+            <img src="/posters/interstellar1.jpg" alt="Interstellar" class="movie-image">
+            <div class="movie-content">
+                <h2 class="movie-title">Interstellar (2014)</h2>
+                <div class="movie-info">
+                    <p>Director: Christopher Nolan</p>
+                </div>
+                <p class="movie-description">
+                    A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.
+                    A groundbreaking sci-fi epic that explores love, time, and survival.
+                </p>
+                <div class="movie-links">
+                    <a href="https://www.imdb.com/title/tt0816692/" class="movie-btn imdb-btn">IMDb</a>
+                    <a href="https://www.imdb.com/name/nm0634240/" class="movie-btn director-btn">Director</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Fight Club Card -->
+        <article class="movie-card">
+            <img src="/posters/fightclub1.jpg" alt="Fight Club" class="movie-image">
+            <div class="movie-content">
+                <h2 class="movie-title">Fight Club (1999)</h2>
+                <div class="movie-info">
+                    <p>Director: David Fincher</p>
+                </div>
+                <p class="movie-description">
+                    An insomniac office worker and a devil-may-care soapmaker form an underground fight club that
+                    evolves into something much more. A cult classic that challenges societal norms.
+                </p>
+                <div class="movie-links">
+                    <a href="https://www.imdb.com/title/tt0137523/" class="movie-btn imdb-btn">IMDb</a>
+                    <a href="https://www.imdb.com/name/nm0000399/" class="movie-btn director-btn">Director</a>
+                </div>
+            </div>
+        </article>
+        <!-- Blade Runner 2049 Card -->
+        <article class="movie-card">
+            <img src="/posters/bladerunner1.jpg" alt="Blade Runner 2049" class="movie-image">
+            <div class="movie-content">
+                <h2 class="movie-title">Blade Runner 2049 (2017)</h2>
+                <div class="movie-info">
+                    <p>Director: Denis Villeneuve</p>
+                </div>
+                <p class="movie-description">
+                    A young blade runner's discovery of a long-buried secret leads him to track down former blade runner
+                    Rick Deckard, who's been missing for thirty years.
+                </p>
+                <div class="movie-links">
+                    <a href="https://www.imdb.com/title/tt1856101/" class="movie-btn imdb-btn">IMDb</a>
+                    <a href="https://www.imdb.com/name/nm0898288/" class="movie-btn director-btn">Director</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Django Unchained Card -->
+        <article class="movie-card">
+            <img src="/posters/django unchained.jpg" alt="Django Unchained" class="movie-image">
+            <div class="movie-content">
+                <h2 class="movie-title">Django Unchained (2012)</h2>
+                <div class="movie-info">
+                    <p>Director: Quentin Tarantino</p>
+                </div>
+                <p class="movie-description">
+                    With the help of a German bounty-hunter, a freed slave sets out to rescue his wife from a brutal
+                    plantation-owner in Mississippi.
+                </p>
+                <div class="movie-links">
+                    <a href="https://www.imdb.com/title/tt1853728/" class="movie-btn imdb-btn">IMDb</a>
+                    <a href="https://www.imdb.com/name/nm0000233/" class="movie-btn director-btn">Director</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- The Godfather Card -->
+        <article class="movie-card">
+            <img src="/posters/godfather1.jpg" alt="The Godfather" class="movie-image">
+            <div class="movie-content">
+                <h2 class="movie-title">The Godfather (1972)</h2>
+                <div class="movie-info">
+                    <p>Director: Francis Ford Coppola</p>
+                </div>
+                <p class="movie-description">
+                    The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his
+                    reluctant son.
+                </p>
+                <div class="movie-links">
+                    <a href="https://www.imdb.com/title/tt0068646/" class="movie-btn imdb-btn">IMDb</a>
+                    <a href="https://www.imdb.com/name/nm0000338/" class="movie-btn director-btn">Director</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- The Good, the Bad and the Ugly Card -->
+        <article class="movie-card">
+            <img src="/posters/goodbadugly.jpg" alt="The Good, the Bad and the Ugly" class="movie-image">
+            <div class="movie-content">
+                <h2 class="movie-title">The Good, the Bad and the Ugly (1966)</h2>
+                <div class="movie-info">
+                    <p>Director: Sergio Leone</p>
+                </div>
+                <p class="movie-description">
+                    A bounty hunting scam joins two men in an uneasy alliance against a third in a race to find a
+                    fortune in gold buried in a remote cemetery.
+                </p>
+                <div class="movie-links">
+                    <a href="https://www.imdb.com/title/tt0060196/" class="movie-btn imdb-btn">IMDb</a>
+                    <a href="https://www.imdb.com/name/nm0001466/" class="movie-btn director-btn">Director</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Goodfellas Card -->
+        <article class="movie-card">
+            <img src="/posters/goodfellas.jpg" alt="Goodfellas" class="movie-image">
+            <div class="movie-content">
+                <h2 class="movie-title">Goodfellas (1990)</h2>
+                <div class="movie-info">
+                    <p>Director: Martin Scorsese</p>
+                </div>
+                <p class="movie-description">
+                    The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill
+                    and his mob partners Jimmy Conway and Tommy DeVito.
+                </p>
+                <div class="movie-links">
+                    <a href="https://www.imdb.com/title/tt0099685/" class="movie-btn imdb-btn">IMDb</a>
+                    <a href="https://www.imdb.com/name/nm0000217/" class="movie-btn director-btn">Director</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Iron Man Card -->
+        <article class="movie-card">
+            <img src="/posters/ironman1.jpg" alt="Iron Man" class="movie-image">
+            <div class="movie-content">
+                <h2 class="movie-title">Iron Man (2008)</h2>
+                <div class="movie-info">
+                    <p>Director: Jon Favreau</p>
+                </div>
+                <p class="movie-description">
+                    After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique
+                    weaponized suit of armor to fight evil.
+                </p>
+                <div class="movie-links">
+                    <a href="https://www.imdb.com/title/tt0371746/" class="movie-btn imdb-btn">IMDb</a>
+                    <a href="https://www.imdb.com/name/nm0269463/" class="movie-btn director-btn">Director</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- No Time to Die Card -->
+        <article class="movie-card">
+            <img src="/posters/notimetodie.jpg" alt="No Time to Die" class="movie-image">
+            <div class="movie-content">
+                <h2 class="movie-title">No Time to Die (2021)</h2>
+                <div class="movie-info">
+                    <p>Director: Cary Joji Fukunaga</p>
+                </div>
+                <p class="movie-description">
+                    James Bond has left active service. His peace is short-lived when Felix Leiter, an old friend from
+                    the CIA, turns up asking for help, leading Bond onto the trail of a mysterious villain armed with
+                    dangerous new technology.
+                </p>
+                <div class="movie-links">
+                    <a href="https://www.imdb.com/title/tt2382320/" class="movie-btn imdb-btn">IMDb</a>
+                    <a href="https://www.imdb.com/name/nm1560977/"
+                        class="movie-btn director-btn">Director</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- The Shawshank Redemption Card -->
+        <article class="movie-card">
+            <img src="/posters/shawshankredemption.jpg" alt="The Shawshank Redemption" class="movie-image">
+            <div class="movie-content">
+                <h2 class="movie-title">The Shawshank Redemption (1994)</h2>
+                <div class="movie-info">
+                    <p>Director: Frank Darabont</p>
+                </div>
+                <p class="movie-description">
+                    Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts
+                    of common decency.
+                </p>
+                <div class="movie-links">
+                    <a href="https://www.imdb.com/title/tt0111161/" class="movie-btn imdb-btn">IMDb</a>
+                    <a href="https://www.imdb.com/name/nm0001104/" class="movie-btn director-btn">Director</a>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class=" footer ">
+        <div class=" footer-content ">
+            <div class=" footer-section ">
+                <h3>Quick Links</h3>
+                <ul class=" footer-links ">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="tvshows.html">TV Shows</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class=" footer-section ">
+                <h3>Connect With Us</h3>
+                <div class=" social-links ">
+                    <a href=" https://github.com/SrujanShetty0007" class=" social-icon "><i
+                            class=" fab fa-github "></i></a>
+                    <a href="https://www.linkedin.com/in/srujan-shetty0007/" class=" social-icon "><i
+                            class=" fab fa-linkedin "></i></a>
+                    <a href=" # " class=" social-icon "><i class=" fab fa-facebook "></i></a>
+                    <a href="https://www.instagram.com/srujan_shetty_0007/" class=" social-icon "><i
+                            class=" fab fa-instagram "></i></a>
+                    <a href="mailto:srujanshetty0007@gmail.com" class=" social-icon "><i
+                            class=" fas fa-envelope "></i></a>
+                </div>
+            </div>
+
+            <div class=" footer-section ">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get the latest updates</p>
+                <form class=" newsletter-form ">
+                    <input type=" email " placeholder=" Enter your email ">
+                    <button type=" submit ">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <marquee behavior="scroll" direction="left">
+        <a href="login.html" style="color: antiquewhite;">Login</a> to get notified and get information about the latest
+        movies and TV shows!
+    </marquee>
+    <script src="script.js"></script>
+</body>
+
+</html>
