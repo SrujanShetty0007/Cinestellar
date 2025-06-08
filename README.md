@@ -1,8 +1,13 @@
 # Cinestellar
 
-![Cinestellar Logo](/web%10icons/film-reel.png)
-
 A comprehensive movie information hub built with HTML, CSS, and JavaScript. Cinestellar provides users with detailed information about movies and TV shows, allowing them to explore cinema across various genres and categories.
+
+## 🛠️ Technologies Used
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
 
 ## 📋 Table of Contents
 
@@ -36,12 +41,7 @@ A comprehensive movie information hub built with HTML, CSS, and JavaScript. Cine
 - **About**: Information about Cinestellar and its purpose
 - **Contact**: Contact form and information
 - **Login**: User authentication page
-
-## 🛠️ Technologies Used
-
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+- 
 
 - Font Awesome (for icons)
 - Responsive Design Principles
