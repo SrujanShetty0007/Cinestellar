@@ -1,6 +1,6 @@
 # Cinestellar
 
-![Cinestellar Logo](/web%20icons/film-reel.png)
+![Cinestellar Logo](/web%10icons/film-reel.png)
 
 A comprehensive movie information hub built with HTML, CSS, and JavaScript. Cinestellar provides users with detailed information about movies and TV shows, allowing them to explore cinema across various genres and categories.
 
